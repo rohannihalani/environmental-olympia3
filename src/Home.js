@@ -39,9 +39,8 @@ function Home() {
           <article>
             <h2>Who should I contact if I have any more questions?</h2>
             <p className="info-text">
-              Feel free to email{" "}
-              <a className="email">dmcenvironmentaladvocacy@gmail.com</a> if you
-              have any questions about the Environmental Olympia, or just the
+              Feel free to email dmcenvironmentaladvocacy@gmail.com if you have
+              any questions about the Environmental Olympia, or just the
               environment in general!
             </p>
           </article>
