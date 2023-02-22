@@ -3,8 +3,18 @@
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .App-header {
@@ -29,4 +39,113 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.top {
+  background-color: #139337;
+  height: 100vh;
+  width: 100vw;
+  /* padding-top: 5%; */
+  margin: 0;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+
+  place-content: center;
+}
+
+.bottom {
+  height: 100vh;
+  width: 100vw;
+  background-color: #d9d9d9;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 2fr 1fr;
+}
+
+.right {
+  padding: 5%;
+  display: grid;
+  place-items: center;
+}
+
+.left {
+  padding: 5%;
+  display: grid;
+  place-items: center;
+}
+
+.left h1 {
+  font-size: 8rem;
+  color: #fefffe;
+
+  font-weight: 300;
+}
+
+.btn {
+  padding: 5%;
+  font-weight: 50;
+  border: solid, #139337;
+  box-shadow: none;
+  font-style: italic;
+  font-style: none;
+  transition: 2s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  transform: scale(1.1);
+  transition: 1s;
+}
+
+.learn-btn {
+  font-size: 4rem;
+  background-color: #d9d9d9;
+  color: #139337;
+  border-radius: 2rem;
+}
+
+.info {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 5%;
+}
+
+.info article {
+  background-color: #139337;
+  border-radius: 2rem;
+  padding: 5%;
+  color: #d9d9d9;
+  text-align: center;
+}
+
+.quiz-btn {
+  background: #139337;
+  font-size: 3rem;
+  border-radius: 3rem;
+  padding: 2%;
+  color: #d9d9d9;
+  text-decoration: wavy;
+}
+
+.footer-section {
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+
+.mainQuiz {
+  display: grid;
+  place-content: center;
+  width: 100vw;
+  height: 100vh;
+  background: #139337;
+}
+
+.info-text {
+  font-size: 1.3rem;
+}
+
+.email {
+  font-style: italic;
 }
